@@ -3,22 +3,22 @@ from __future__ import division
 import numpy as np
 import matplotlib as mpl
     
-pgf_with_latex = {                      # setup matplotlib to use latex for output
-"pgf.texsystem": "pdflatex",        # change this if using xetex or lautex
-"text.usetex": True,                # use LaTeX to write all text
+pgf_with_latex = {               # setup matplotlib to use latex for output
+"pgf.texsystem": "pdflatex",     # change this if using xetex or lautex
+"text.usetex": True,             # use LaTeX to write all text
 "font.family": [0],
-"font.serif": [],                   # blank entries should cause plots to inherit fonts from the document
+"font.serif": [],                # blank entries should cause plots to inherit fonts from the document
 "font.sans-serif": [],
 "font.monospace": [],
-"axes.labelsize": 8,               # LaTeX default is 10pt font.
+"axes.labelsize": 8,             # LaTeX default is 10pt font.
 "font.size": 8,
-"legend.fontsize": 8,               # Make the legend/label fonts a little smaller
+"legend.fontsize": 8,            # Make the legend/label fonts a little smaller
 "xtick.labelsize": 8,
 "ytick.labelsize": 8,
-#"figure.figsize": figsize(0.9),     # default fig size of 0.9 textwidth
+#"figure.figsize": figsize(0.9), # default fig size of 0.9 textwidth
 "pgf.preamble": [
-r"\usepackage[utf8x]{inputenc}",    # use utf8 fonts becasue your computer can handle it :)
-r"\usepackage[T1]{fontenc}",        # plots will be generated using this preamble
+r"\usepackage[utf8x]{inputenc}", # use utf8 fonts becasue your computer can handle it :)
+r"\usepackage[T1]{fontenc}",     # plots will be generated using this preamble
         ]
     }
 mpl.rcParams.update(pgf_with_latex)
