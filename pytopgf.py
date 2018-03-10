@@ -2,11 +2,6 @@
 from __future__ import division
 import numpy as np
 import matplotlib as mpl
-
-def plotstyle(style=None)
-    """Plotstyle
-    Style: 'Draft' (Default None)
-    """
     
 pgf_with_latex = {                      # setup matplotlib to use latex for output
 "pgf.texsystem": "pdflatex",        # change this if using xetex or lautex
@@ -28,6 +23,12 @@ r"\usepackage[T1]{fontenc}",        # plots will be generated using this preambl
     }
 mpl.rcParams.update(pgf_with_latex)
 import matplotlib.pyplot as plt
+
+def draft():
+    """For plotting in standard matplotlib
+    Style: 'Draft' (Default None)
+    """
+    mpl.rcParams.update(mpl.rcParamsDefault)
 
 def figsize(fig_width_pt, scale=None, ratio=None): # Used through newfig()
     """Define the figure size. 
