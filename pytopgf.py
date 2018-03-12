@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*-
 from __future__ import division
+import __main__ as main
+import os
 import numpy as np
 import matplotlib as mpl
     
@@ -58,7 +60,7 @@ def newfig(width,scale=None,ratio=None):
     ax = fig.add_subplot(111)
     return fig, ax
 
-def savefig(filename):
+def savefig(filename=os.path.splitext(os.path.basename(main.__file__))[0]):
     """Saves the file
     filename: String"""
     plt.savefig('{}.pgf'.format(filename), bbox_inches='tight')
