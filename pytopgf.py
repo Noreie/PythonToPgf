@@ -73,3 +73,9 @@ def sexyplot():
     mpl.rcParams['legend.loc'] = 'Best'
     #mpl.rcParams['grid.color'] ='k'
     mpl.rcParams['grid.linestyle']='--'
+    mpl.rcParams["legend.fancybox"] = False
+    mpl.rcParams["legend.frameon"] = True
+    mpl.rcParams["legend.framealpha"]= True
+    mpl.rcParams["legend.facecolor"]='white'
+    mpl.rcParams["legend.edgecolor"]='k'
+    mpl.rcParams['patch.linewidth']=0.7
