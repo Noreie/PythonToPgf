@@ -9,7 +9,7 @@ def ema(y, a):
         s.append(a * y[t] + (1-a) * s[t-1])
     return np.array(s)
 
-p2p.sexyplot() #Kan slås av
+#p2p.sexyplot() #Kan slås av
 fig, ax  = p2p.newfig(345,ratio=1.5)
 
 
